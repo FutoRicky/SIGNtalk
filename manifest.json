@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "Speech To Sign",
+  "version": "0.1",
+  "description": "Speech to Sign Language",
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}
