@@ -1,8 +1,42 @@
 body {
   width: 400px;
+  background-color: #CD3839;
+}
+
+#speakButton {
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+    border: 0;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #CD3839;
+}
+
+#speakButton:focus {
+  outline: none;
+}
+
+
+#display-text {
+  text-align: center;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 4px;
+  display: none;
+}
+
+#logo {
+  width: 27%;
+  margin-bottom: 5px;
 }
 
 .sign-language-container {
   display: flex;
   justify-content: center;
+  height: 310px;
+  background-color: #f4f4f4;
+  margin-bottom: 5px;
+  display: none;
 }

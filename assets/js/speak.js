@@ -2,12 +2,17 @@ var endpoint = '';
 $(document).ready(function() {
   $('#speakButton').click(function() {
     var recognition = new webkitSpeechRecognition();
+    $('#speakButton').text('recording...');
     // set properties
     recognition.lang = 'en';
     recognition.continuous = false;
     recognition.onresult = function(res) {
       var text = '';
       text = res.results[0][0].transcript;
+      $('#display-text').css('display', 'block');
+      $('#display-text').text(text);
+      $('#speakButton').text('Speak into your microphone');
+      $('.sign-language-container').css('display', 'block');
       $.ajax({
         method: 'POST',
         url: endpoint + '/translate',
