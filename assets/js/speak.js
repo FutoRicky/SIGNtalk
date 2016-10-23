@@ -1,8 +1,29 @@
-var endpoint = '';
+const endpoint = 'http://aeaee510.ngrok.io/api';
+const video_source = 'https://www.signingsavvy.com/';
+var replay = [];
+var playVideos = function(videos) {
+  if(videos.length > 0) {
+    video = videos.pop();
+    $('#ss').attr("src", video_source + video);
+    $('#myVideo').get(0).load();
+    $('#myVideo').get(0).addEventListener('canplaythrough', function() {
+      this.onended = function() {
+        playVideos(videos);
+      }
+      this.play();
+    });
+  }
+  return;
+}
+
 $(document).ready(function() {
+
   $('#speakButton').click(function() {
     var recognition = new webkitSpeechRecognition();
+
+
     $('#speakButton').text('recording...');
+
     // set properties
     recognition.lang = 'en';
     recognition.continuous = false;
@@ -15,14 +36,15 @@ $(document).ready(function() {
       $('.sign-language-container').css('display', 'block');
       $.ajax({
         method: 'POST',
-        url: endpoint + '/translate',
+        url: endpoint + '/translation',
         data: { words: text.split(' ') }
       }).then(function(response) {
-        for(var i = 0; i < reponse.length; i++) {
-          // Do video logic here
-        }
+        replay = response.videos.reverse();
+        videos = replay;
+        playVideos(videos);
       })
     };
+
     recognition.onerror = function(event) {
       if (event.error === 'not-allowed') {
         window.open(chrome.extension.getURL('audioPermission.html'));
@@ -30,4 +52,5 @@ $(document).ready(function() {
     }
     recognition.start();
   })
+
 })
