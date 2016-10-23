@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="99px" viewBox="0 0 128 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-128</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.78984519,24.1596951 L7.78984519,3.43597374 C7.78984519,1.5354504 6.25176316,0 4.35444283,0 C2.46098317,0 0.91904048,1.53833784 0.91904048,3.43597374 L0.91904048,25.8909293 C0.91904048,26.2275194 0.967283627,26.5526586 1.05722144,26.8598456 C1.60008836,25.2885811 3.09472993,24.1596951 4.84271299,24.1596951 L7.78984519,24.1596951 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.87080471" height="26.9608122" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M22.0547036,22.0689655 L22.0547036,3.50656419 C22.0547036,1.56914145 20.4836863,-1.77635684e-15 18.5457381,-1.77635684e-15 C16.6117333,-1.77635684e-15 15.0367726,1.56994226 15.0367726,3.50656419 L15.0367726,22.0689655 L22.0547036,22.0689655 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.01793101" height="22.0689655" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M15.0694053,22.0689655 L15.0694053,11.1736922 C15.0694053,9.23739088 13.4983879,7.66072136 11.5604398,7.66072136 C9.62643497,7.66072136 8.05147426,9.23353199 8.05147426,11.1736922 L8.05147426,22.0689655 L15.0694053,22.0689655 Z M14.078571,28.7632187 C13.4402583,29.4218266 12.54707,29.8311534 11.5604398,29.8311534 C10.572536,29.8311534 9.67998413,29.4214348 9.04228939,28.7632187 L14.078571,28.7632187 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.01793101" height="22.170432" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="22.5402299" y="22.0689655" width="5.88505747" height="1.47126437"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="5.88505747" height="1.47126437" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <path d="M20.8206572,21.561633 L28.4245232,21.561633 C28.4245232,21.561633 31.0180145,39.3877838 14.4845075,39.3877838 C2.74114236,39.3877838 0.647214332,30.3946152 0.419628066,25.1835545 L17.6443863,25.1835545 C19.3996471,25.1835545 20.8206572,23.7583689 20.8206572,22.0003133 L20.8206572,21.561633 Z" id="path-9"></path>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28.1527975" height="17.8261508" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="0.83908046" y="20.5977011" width="21.5540224" height="6.69425315" rx="3.34712658"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21.5540224" height="6.69425315" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="4.4137931" y="0" width="7.35632184" height="38.0027585" rx="3.67816092"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.35632184" height="38.0027585" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <rect id="path-15" x="11.7701149" y="5.88505747" width="7.35632184" height="26.4827586" rx="3.67816092"></rect>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.35632184" height="26.4827586" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <rect id="path-17" x="26.4827586" y="5.88505747" width="7.35632184" height="26.4827586" rx="3.67816092"></rect>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.35632184" height="26.4827586" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <rect id="path-19" x="19" y="0" width="7.35632184" height="38.0027585" rx="3.67816092"></rect>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.35632184" height="38.0027585" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <rect id="path-21" x="33.8390805" y="0" width="7.35632184" height="38.0027585" rx="3.67816092"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.35632184" height="38.0027585" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-128">
+            <path d="M31.939822,89.3330618 C36.3746946,90.7597181 41.100738,91.530273 46.0027843,91.530273 L82.2362096,91.530273 C107.508426,91.530273 128,71.0405235 128,45.7651365 C128,20.4841922 107.510331,-5.68434189e-14 82.235043,-5.68434189e-14 L45.5272307,-5.68434189e-14 C20.259228,-5.68434189e-14 -0.131008783,20.4897495 0.000633857311,45.7651365 C0.0657876635,58.2746673 5.14153829,69.6097259 13.3154029,77.8696924 L11.1271807,98.7403068 L31.939822,89.3330618 Z" id="Combined-Shape" fill="#CD3839"></path>
+            <g id="Group-2" transform="translate(25.011494, 26.482759)">
+                <ellipse id="Oval" stroke="#FFFFFF" fill="#FFFFFF" opacity="0.899999976" cx="44.4712644" cy="19.4712644" rx="1.47126437" ry="1.47126437"></ellipse>
+                <g id="Group" transform="translate(46.609195, 0.000000)">
+                    <use id="Combined-Shape" stroke="#CD3839" mask="url(#mask-2)" stroke-width="1.60000002" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <use id="Combined-Shape" stroke="#CD3839" mask="url(#mask-4)" stroke-width="1.60000002" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    <use id="Combined-Shape" stroke="#CD3839" mask="url(#mask-6)" stroke-width="1.60000002" fill="#FFFFFF" xlink:href="#path-5"></use>
+                    <use id="Rectangle-5" stroke="#979797" mask="url(#mask-8)" stroke-width="2" fill="#BC2423" xlink:href="#path-7"></use>
+                    <use id="Combined-Shape" stroke="#CD3839" mask="url(#mask-10)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-9"></use>
+                    <rect id="Rectangle-3-Copy-2" fill="#FFFFFF" x="22.4393079" y="11.7701149" width="5.11999989" height="13.3428458" rx="2.55999994"></rect>
+                    <use id="Rectangle-2" stroke="#CD3839" mask="url(#mask-12)" stroke-width="1.79999995" fill="#FFFFFF" xlink:href="#path-11"></use>
+                    <path d="M12.2413793,26.6372365 C12.2413793,26.6372365 13.7126437,27.5200041 14.4482759,29.2855168 C15.183908,31.0510296 15.183908,31.9337972 15.183908,31.9337972" id="Path-2" stroke="#CD3839" stroke-width="0.5"></path>
+                </g>
+                <g id="Sound" fill="#FFFFFF">
+                    <use id="Rectangle-3" stroke="#CD3839" mask="url(#mask-14)" stroke-width="2" opacity="0.5" xlink:href="#path-13"></use>
+                    <use id="Rectangle-3" stroke="#CD3839" mask="url(#mask-16)" stroke-width="2" opacity="0.599999964" xlink:href="#path-15"></use>
+                    <use id="Rectangle-3" stroke="#CD3839" mask="url(#mask-18)" stroke-width="2" opacity="0.799999952" xlink:href="#path-17"></use>
+                    <use id="Rectangle-3" stroke="#CD3839" mask="url(#mask-20)" stroke-width="2" opacity="0.699999988" xlink:href="#path-19"></use>
+                    <use id="Rectangle-3" stroke="#CD3839" mask="url(#mask-22)" stroke-width="2" opacity="0.899999976" xlink:href="#path-21"></use>
+                    <ellipse id="Oval" stroke="#FFFFFF" opacity="0.400000006" cx="1.47126437" cy="19.4712644" rx="1.47126437" ry="1.47126437"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,9 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Speech To Sign",
+  "name": "SIGNtalk",
   "version": "0.1",
   "description": "Speech to Sign Language",
   "browser_action": {
     "default_popup": "index.html"
+  },
+  "icons": {
+    "128": "assets/img/icon128.png"
   }
 }
