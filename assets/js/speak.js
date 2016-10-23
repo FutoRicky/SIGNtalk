@@ -1,3 +1,4 @@
+var endpoint = '';
 $(document).ready(function() {
   $('#speakButton').click(function() {
     var recognition = new webkitSpeechRecognition();
@@ -7,7 +8,15 @@ $(document).ready(function() {
     recognition.onresult = function(res) {
       var text = '';
       text = res.results[0][0].transcript;
-      console.log(text.split(' '));
+      $.ajax({
+        method: 'POST',
+        url: endpoint + '/translate',
+        data: { words: text.split(' ') }
+      }).then(function(response) {
+        for(var i = 0; i < reponse.length; i++) {
+          // Do video logic here
+        }
+      })
     };
     recognition.onerror = function(event) {
       if (event.error === 'not-allowed') {
