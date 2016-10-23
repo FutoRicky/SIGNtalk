@@ -9,5 +9,8 @@
   "icons": {
     "128": "assets/img/icon128.png"
   },
-  "permissions": ["<all_urls>"]
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ]
 }

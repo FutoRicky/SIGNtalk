@@ -3,7 +3,7 @@ body {
   background-color: #CD3839;
 }
 
-#speakButton {
+button {
     width: 100%;
     border-radius: 0;
     height: 40px;
@@ -14,7 +14,7 @@ body {
     color: #CD3839;
 }
 
-#speakButton:focus {
+button:focus {
   outline: none;
 }
 

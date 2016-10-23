@@ -1,4 +1,4 @@
-const endpoint = 'http://aeaee510.ngrok.io/api';
+const endpoint = 'https://sign-talk-api.herokuapp.com/api';
 const video_source = 'https://www.signingsavvy.com/';
 var replay = [];
 var playVideos = function(videos) {
@@ -14,6 +14,7 @@ var playVideos = function(videos) {
     });
   }
   $('#myVideo').addClass('hidden');
+  $('#replayButton').removeClass('hidden');
   return;
 }
 
@@ -21,7 +22,6 @@ $(document).ready(function() {
 
   $('#speakButton').click(function() {
     var recognition = new webkitSpeechRecognition();
-
 
     $('#speakButton').text('recording...');
 
@@ -41,8 +41,8 @@ $(document).ready(function() {
         url: endpoint + '/translation',
         data: { words: text.split(' ') }
       }).then(function(response) {
-        replay = response.videos.reverse();
-        videos = replay;
+        chrome.storage.local.set({ "videos": response.videos.reverse() });
+        videos = response.videos.reverse();
         $('#loader').remove();
         $('#myVideo').removeClass('hidden');
         playVideos(videos);
@@ -55,6 +55,14 @@ $(document).ready(function() {
       }
     }
     recognition.start();
+  })
+
+  $('#replayButton').click(function() {
+    chrome.storage.local.get(["videos"], function(item){
+      $('#myVideo').removeClass('hidden');
+      videos = item.videos
+      playVideos(videos);
+    });
   })
 
 })
