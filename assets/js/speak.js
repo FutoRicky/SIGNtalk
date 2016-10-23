@@ -6,13 +6,14 @@ var playVideos = function(videos) {
     video = videos.pop();
     $('#ss').attr("src", video_source + video);
     $('#myVideo').get(0).load();
-    $('#myVideo').get(0).addEventListener('canplaythrough', function() {
+    return $('#myVideo').get(0).addEventListener('canplaythrough', function() {
       this.onended = function() {
         playVideos(videos);
       }
       this.play();
     });
   }
+  $('#myVideo').addClass('hidden');
   return;
 }
 
@@ -34,7 +35,7 @@ $(document).ready(function() {
       $('#display-text').text(text);
       $('#speakButton').text('Start recording speech');
       $('.sign-language-container').css('display', 'flex');
-      $('.sign-language-container').html("<img id='loader' src='assets/img/loader.gif' alt='loader'>");
+      $('.sign-language-container').append("<img id='loader' src='assets/img/loader.gif' alt='loader'>");
       $.ajax({
         method: 'POST',
         url: endpoint + '/translation',
@@ -42,6 +43,8 @@ $(document).ready(function() {
       }).then(function(response) {
         replay = response.videos.reverse();
         videos = replay;
+        $('#loader').remove();
+        $('#myVideo').removeClass('hidden');
         playVideos(videos);
       })
     };
