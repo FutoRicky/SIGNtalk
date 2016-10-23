@@ -33,10 +33,14 @@ body {
 }
 
 .sign-language-container {
-  display: flex;
   justify-content: center;
   height: 310px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   margin-bottom: 5px;
   display: none;
+  align-items: center;
+}
+
+#loader{
+  width: 20%;
 }

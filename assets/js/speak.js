@@ -11,8 +11,9 @@ $(document).ready(function() {
       text = res.results[0][0].transcript;
       $('#display-text').css('display', 'block');
       $('#display-text').text(text);
-      $('#speakButton').text('Speak into your microphone');
-      $('.sign-language-container').css('display', 'block');
+      $('#speakButton').text('Start recording speech');
+      $('.sign-language-container').css('display', 'flex');
+      $('.sign-language-container').html("<img id='loader' src='assets/img/loader.gif' alt='loader'>");
       $.ajax({
         method: 'POST',
         url: endpoint + '/translate',
