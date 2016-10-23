@@ -1,27 +1,19 @@
-var showSpeech = function(response) {
-  // debugger;
-  $('#videoParagraph').text()
-}
-
 $(document).ready(function() {
-
   $('#speakButton').click(function() {
     var recognition = new webkitSpeechRecognition();
     // set properties
     recognition.lang = 'en';
     recognition.continuous = false;
-    recognition.onresult = function() {
-      console.log(response);
+    recognition.onresult = function(res) {
+      var text = '';
+      text = res.results[0][0].transcript;
+      console.log(text.split(' '));
     };
     recognition.onerror = function(event) {
       if (event.error === 'not-allowed') {
-        console.log('this happened');
-        window.open(chrome.extension.getURL('audioPermission.html'), '_blank');
+        window.open(chrome.extension.getURL('audioPermission.html'));
       }
     }
-    // recognition.onend = function() {
-    //   recognition.end();
-    // }
     recognition.start();
   })
 })
