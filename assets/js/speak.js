@@ -42,7 +42,7 @@ $(document).ready(function() {
         data: { words: text.split(' ') }
       }).then(function(response) {
         chrome.storage.local.set({ "videos": response.videos.reverse() });
-        videos = response.videos.reverse();
+        videos = response.videos;
         $('#loader').remove();
         $('#myVideo').removeClass('hidden');
         playVideos(videos);
